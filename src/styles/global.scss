@@ -1,0 +1,76 @@
+@import './_nullStyle.scss';
+
+html {
+  font-size: 14px;
+  height: 100%;
+  letter-spacing: 0.01rem;
+  background-color: #f8f8f8;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', Helvetica, Arial, serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #6e6b7b;
+  text-align: left;
+  background-color: #f8f8f8;
+}
+
+.container {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1440px;
+  @media (max-width: 1200px) {
+    & {
+      max-width: 1140px;
+    }
+  }
+  @media (max-width: 992px) {
+    & {
+      max-width: 960px;
+    }
+  }
+  @media (max-width: 768px) {
+    & {
+      max-width: 720px;
+    }
+  }
+  @media (max-width: 576px) {
+    & {
+      max-width: 540px;
+    }
+  }
+}
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 0;
+  padding: 0;
+  border: none;
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  z-index: 1;
+  border-radius: 5px;
+  background: #fff no-repeat center / 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  &:focus {
+    outline: none;
+  }
+}
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
+.wrapper-spiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
